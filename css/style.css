@@ -3,21 +3,33 @@ html {
 }
 
 img {
-  height: 100px;
+  max-width: 100%;
+  max-height: 100px;
 }
 
 .grid_container {
+  width: 100vw;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
 }
 
 .header_grid {
   display: grid;
   grid-auto-flow: column;
   align-items: center;
+  height: 50px;
 }
 
-.header_grid > a {
+.logo_header {
+  justify-self: start;
+}
+
+.nav_header {
+  justify-self: end;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 24px;
 }
 
 svg {
