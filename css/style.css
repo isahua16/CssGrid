@@ -4,21 +4,24 @@ html {
 
 img {
   max-width: 100%;
-  max-height: 100px;
+  object-fit: cover;
+  height: 15vh;
+  width: 20vw;
 }
 
 .grid_container {
-  width: 100vw;
+  height: 60vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 24px;
+  align-items: center;
 }
 
 .header_grid {
   display: grid;
   grid-auto-flow: column;
   align-items: center;
-  height: 50px;
+  height: 100px;
 }
 
 .logo_header {
@@ -34,4 +37,12 @@ img {
 
 svg {
   width: 50px;
+}
+
+footer {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  align-items: end;
+  gap: 24px;
 }
