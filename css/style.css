@@ -1,0 +1,25 @@
+html {
+  font-family: sans-serif;
+}
+
+img {
+  height: 100px;
+}
+
+.grid_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.header_grid {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+}
+
+.header_grid > a {
+}
+
+svg {
+  width: 50px;
+}
